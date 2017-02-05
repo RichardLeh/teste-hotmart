@@ -11,6 +11,7 @@ import UIKit
 struct MenuItem {
     let title:String
     let image:UIImage
+    let link:String
 }
 
 class MenuViewController: UIViewController {
@@ -40,9 +41,15 @@ class MenuViewController: UIViewController {
     func setUpMenu(withDict itens:[Dictionary<String, String>]){
         for item in itens {
             if let title = item["title"],
-               let imageString = item["image"], let image = UIImage(named: imageString) {
+               let imageString = item["image"],
+               let image = UIImage(named: imageString) {
                 
-                let menuItem = MenuItem(title: title, image: image)
+                var menuLink = ""
+                if let link = item["link"] {
+                    menuLink = link
+                }
+                
+                let menuItem = MenuItem(title: title, image: image, link: menuLink)
                 menuItens.append(menuItem)
             }
         }
@@ -66,6 +73,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if !menuItens[indexPath.row].link.isEmpty {
+            sideMenuController?.performSegue(withIdentifier: menuItens[indexPath.row].link, sender: nil)
+        }
     }
-    
 }

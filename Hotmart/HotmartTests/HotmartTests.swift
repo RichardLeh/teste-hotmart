@@ -23,19 +23,17 @@ class HotmartTests: XCTestCase {
         super.tearDown()
     }
     
+    func testMenuCount() {
+        let itensPlist = menuViewController.getMenuPlist()
+        XCTAssertTrue(itensPlist.count > 0)
+    }
+    
     func testMenuSetUp() {
         let itensPlist = menuViewController.getMenuPlist()
         menuViewController.setUpMenu(withDict: itensPlist)
         let itensMenu = menuViewController.menuItens
         
         XCTAssertTrue(itensPlist.count == itensMenu.count)
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
     
 }

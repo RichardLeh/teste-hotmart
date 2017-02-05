@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		53E646275EA09B756D4BDEBA /* Pods_Hotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */; };
+		C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */; };
 		C597B91C1E466246002A6BCB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91B1E466246002A6BCB /* MenuViewController.swift */; };
 		C597B91F1E466403002A6BCB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */; };
 		C597B9211E466968002A6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C597B9201E466968002A6BCB /* Assets.xcassets */; };
 		C597B9231E467322002A6BCB /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C597B9221E467322002A6BCB /* Menu.plist */; };
+		C597B9271E477DAD002A6BCB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9261E477DAD002A6BCB /* RootViewController.swift */; };
+		C597B9291E477F9A002A6BCB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9281E477F9A002A6BCB /* DashboardViewController.swift */; };
+		C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */; };
+		C597B92D1E478727002A6BCB /* MySalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92C1E478727002A6BCB /* MySalesViewController.swift */; };
+		C597B92F1E478815002A6BCB /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92E1E478815002A6BCB /* General.swift */; };
+		C597B9311E478854002A6BCB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9301E478854002A6BCB /* Extensions.swift */; };
 		C5BB3F2A1E4540FE00716160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB3F291E4540FE00716160 /* AppDelegate.swift */; };
-		C5BB3F2C1E4540FE00716160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB3F2B1E4540FE00716160 /* ViewController.swift */; };
 		C5BB3F2F1E4540FE00716160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BB3F2D1E4540FE00716160 /* Main.storyboard */; };
 		C5BB3F341E4540FE00716160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */; };
 		C5BB3F3F1E4540FE00716160 /* HotmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB3F3E1E4540FE00716160 /* HotmartTests.swift */; };
@@ -33,13 +39,19 @@
 		42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.release.xcconfig"; sourceTree = "<group>"; };
 		974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DD49D48A6BA761F5EA0B7E /* Pods-Hotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.debug.xcconfig"; sourceTree = "<group>"; };
+		C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 		C597B91B1E466246002A6BCB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ViewController/MenuViewController.swift; sourceTree = "<group>"; };
 		C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = View/MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C597B9201E466968002A6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C597B9221E467322002A6BCB /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		C597B9261E477DAD002A6BCB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ViewController/RootViewController.swift; sourceTree = "<group>"; };
+		C597B9281E477F9A002A6BCB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ViewController/DashboardViewController.swift; sourceTree = "<group>"; };
+		C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = ViewController/MessagesViewController.swift; sourceTree = "<group>"; };
+		C597B92C1E478727002A6BCB /* MySalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySalesViewController.swift; path = ViewController/MySalesViewController.swift; sourceTree = "<group>"; };
+		C597B92E1E478815002A6BCB /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		C597B9301E478854002A6BCB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C5BB3F261E4540FE00716160 /* Hotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BB3F291E4540FE00716160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5BB3F2B1E4540FE00716160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5BB3F2E1E4540FE00716160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5BB3F331E4540FE00716160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5BB3F351E4540FE00716160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,8 +99,11 @@
 		C597B91A1E4661B0002A6BCB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C5BB3F2B1E4540FE00716160 /* ViewController.swift */,
 				C597B91B1E466246002A6BCB /* MenuViewController.swift */,
+				C597B9261E477DAD002A6BCB /* RootViewController.swift */,
+				C597B9281E477F9A002A6BCB /* DashboardViewController.swift */,
+				C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */,
+				C597B92C1E478727002A6BCB /* MySalesViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -99,6 +114,29 @@
 				C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C597B9241E477BA0002A6BCB /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F291E4540FE00716160 /* AppDelegate.swift */,
+				C597B9201E466968002A6BCB /* Assets.xcassets */,
+				C5BB3F351E4540FE00716160 /* Info.plist */,
+				C597B9221E467322002A6BCB /* Menu.plist */,
+				C597B92E1E478815002A6BCB /* General.swift */,
+				C597B9301E478854002A6BCB /* Extensions.swift */,
+				C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		C597B9251E477BB5002A6BCB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F2D1E4540FE00716160 /* Main.storyboard */,
+				C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		C5BB3F1D1E4540FE00716160 = {
@@ -124,14 +162,10 @@
 		C5BB3F281E4540FE00716160 /* Hotmart */ = {
 			isa = PBXGroup;
 			children = (
+				C597B9251E477BB5002A6BCB /* UI */,
 				C597B91D1E4663DD002A6BCB /* View */,
-				C5BB3F291E4540FE00716160 /* AppDelegate.swift */,
 				C597B91A1E4661B0002A6BCB /* ViewController */,
-				C5BB3F2D1E4540FE00716160 /* Main.storyboard */,
-				C597B9201E466968002A6BCB /* Assets.xcassets */,
-				C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */,
-				C5BB3F351E4540FE00716160 /* Info.plist */,
-				C597B9221E467322002A6BCB /* Menu.plist */,
+				C597B9241E477BA0002A6BCB /* Supporting File */,
 			);
 			path = Hotmart;
 			sourceTree = "<group>";
@@ -300,9 +334,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5BB3F2C1E4540FE00716160 /* ViewController.swift in Sources */,
+				C597B9271E477DAD002A6BCB /* RootViewController.swift in Sources */,
+				C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */,
+				C597B9311E478854002A6BCB /* Extensions.swift in Sources */,
+				C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */,
+				C597B92D1E478727002A6BCB /* MySalesViewController.swift in Sources */,
 				C597B91C1E466246002A6BCB /* MenuViewController.swift in Sources */,
+				C597B9291E477F9A002A6BCB /* DashboardViewController.swift in Sources */,
 				C597B91F1E466403002A6BCB /* MenuTableViewCell.swift in Sources */,
+				C597B92F1E478815002A6BCB /* General.swift in Sources */,
 				C5BB3F2A1E4540FE00716160 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

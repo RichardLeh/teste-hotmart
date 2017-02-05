@@ -7,12 +7,16 @@
 		<string>Dashboard</string>
 		<key>image</key>
 		<string>ico_dashboard</string>
+		<key>link</key>
+		<string>segueMenuDashboard</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>Minhas Vendas</string>
 		<key>image</key>
 		<string>ico_minhas_vendas</string>
+		<key>link</key>
+		<string>segueMenuMySales</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -31,6 +35,8 @@
 		<string>Mensagens</string>
 		<key>image</key>
 		<string>ico_mensagem</string>
+		<key>link</key>
+		<string>segueMenuMessages</string>
 	</dict>
 	<dict>
 		<key>title</key>
