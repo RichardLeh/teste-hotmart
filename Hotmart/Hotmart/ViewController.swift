@@ -14,7 +14,7 @@ class ViewController: SideMenuController {
     required init?(coder aDecoder: NSCoder) {
         SideMenuController.preferences.drawing.menuButtonImage = #imageLiteral(resourceName: "ico_menu")
         SideMenuController.preferences.drawing.sidePanelPosition = .overCenterPanelLeft
-        SideMenuController.preferences.drawing.sidePanelWidth = 280
+        SideMenuController.preferences.drawing.sidePanelWidth = 300
         SideMenuController.preferences.drawing.centerPanelShadow = true
         SideMenuController.preferences.animating.statusBarBehaviour = .horizontalPan
         super.init(coder: aDecoder)

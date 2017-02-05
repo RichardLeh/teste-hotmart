@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="197" id="7sE-2E-wqV"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3er-e2-UG3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3er-e2-UG3">
                                 <rect key="frame" x="0.0" y="217" width="375" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -60,16 +60,16 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRB-qn-REZ" id="JnZ-RM-Nua">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mfi-vO-oao">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_afiliados" translatesAutoresizingMaskIntoConstraints="NO" id="Mfi-vO-oao">
                                                     <rect key="frame" x="9" y="0.0" width="42.5" height="56"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42.5" id="Fyb-Su-9aD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-c9-RDf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MenuItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-c9-RDf">
                                                     <rect key="frame" x="81.5" y="0.0" width="284.5" height="55.5"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                     <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,7 +87,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="menuImage" destination="JnZ-RM-Nua" id="LgT-Xa-khX"/>
+                                            <outlet property="menuImage" destination="Mfi-vO-oao" id="WYw-xK-yDp"/>
                                             <outlet property="menuTitle" destination="pOE-c9-RDf" id="RfE-1Z-53y"/>
                                         </connections>
                                     </tableViewCell>
@@ -215,4 +215,7 @@
             <point key="canvasLocation" x="1488.8" y="554.57271364317842"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ico_afiliados" width="178" height="178"/>
+    </resources>
 </document>

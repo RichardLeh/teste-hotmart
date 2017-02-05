@@ -8,27 +8,44 @@
 
 import UIKit
 
-typealias MenuItem = (title:String, image:UIImage)
+struct MenuItem {
+    let title:String
+    let image:UIImage
+}
 
 class MenuViewController: UIViewController {
 
-    let menuItens = [MenuItem]()
+    var menuItens = [MenuItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setUpMenu()
-    }
-
-    func setUpMenu(){
         
-        //let menuItens = ["Dashboard", "Minhas Vendas", "Meus Produtos", "Afiliados", "Mensagens", "Notificações", "Minha Conta", "Sobre o App"]
-    
+        setUpMenu(withDict: getMenuPlist())
+    }
+
+    func getMenuPlist() -> [Dictionary<String, String>] {
+        var menuItensArrDict = [Dictionary<String, String>]()
+        if  let fileUrl = Bundle.main.url(forResource: "Menu", withExtension: "plist"),
+            let data = try? Data(contentsOf: fileUrl) {
+            if let menuItensArr = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [Dictionary<String, String>] { // [String: Any] which ever it is
+                if let menuItensArr = menuItensArr{
+                    menuItensArrDict = menuItensArr
+                }
+            }
+        }
+        
+        return menuItensArrDict
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setUpMenu(withDict itens:[Dictionary<String, String>]){
+        for item in itens {
+            if let title = item["title"],
+               let imageString = item["image"], let image = UIImage(named: imageString) {
+                
+                let menuItem = MenuItem(title: title, image: image)
+                menuItens.append(menuItem)
+            }
+        }
     }
 
 }
@@ -37,13 +54,18 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! MenuTableViewCell
-        cell.menuTitle.text = "teste \(indexPath.row)"
+        cell.menuTitle.text = menuItens[indexPath.row].title
+        cell.menuImage.image = menuItens[indexPath.row].image
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return menuItens.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
