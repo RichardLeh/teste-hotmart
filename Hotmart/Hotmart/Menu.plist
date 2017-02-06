@@ -29,6 +29,8 @@
 		<string>Afiliados</string>
 		<key>image</key>
 		<string>ico_afiliados</string>
+		<key>attention</key>
+		<string>121</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -37,12 +39,16 @@
 		<string>ico_mensagem</string>
 		<key>link</key>
 		<string>segueMenuMessages</string>
+		<key>attention</key>
+		<string>+50</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>Notificações</string>
 		<key>image</key>
 		<string>ico_notificacoes</string>
+		<key>attention</key>
+		<string>15</string>
 	</dict>
 	<dict>
 		<key>title</key>

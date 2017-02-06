@@ -8,22 +8,33 @@
 
 import UIKit
 
-struct MenuItem {
-    let title:String
-    let image:UIImage
-    let link:String
-}
-
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var picImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var emailUserLabel: UILabel!
+    
     var menuItens = [MenuItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let user = User(name: "Richard Leh", email: "richardleh@gmail.com", picture: #imageLiteral(resourceName: "user"))
+        
+        setUpUser(with: user)
         setUpMenu(withDict: getMenuPlist())
     }
 
+    func setUpUser(with user:User){
+        userNameLabel.text = user.name.uppercased()
+        emailUserLabel.text = user.email.lowercased()
+        
+        picImageView.image = user.picture
+        backgroundImageView.image = user.picture
+        backgroundImageView.blurImage()
+    }
+    
     func getMenuPlist() -> [Dictionary<String, String>] {
         var menuItensArrDict = [Dictionary<String, String>]()
         if  let fileUrl = Bundle.main.url(forResource: "Menu", withExtension: "plist"),
@@ -48,8 +59,12 @@ class MenuViewController: UIViewController {
                 if let link = item["link"] {
                     menuLink = link
                 }
+                var menuAttention = ""
+                if let attention = item["attention"]{
+                    menuAttention = attention
+                }
                 
-                let menuItem = MenuItem(title: title, image: image, link: menuLink)
+                let menuItem = MenuItem(title: title, image: image, link: menuLink, attention: menuAttention)
                 menuItens.append(menuItem)
             }
         }
@@ -61,8 +76,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! MenuTableViewCell
-        cell.menuTitle.text = menuItens[indexPath.row].title
-        cell.menuImage.image = menuItens[indexPath.row].image
+        cell.set(with: menuItens[indexPath.row])
         
         return cell
     }

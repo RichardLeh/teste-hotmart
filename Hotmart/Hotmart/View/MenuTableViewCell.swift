@@ -12,16 +12,17 @@ class MenuTableViewCell: UITableViewCell {
 
     @IBOutlet weak var menuImage: UIImageView!
     @IBOutlet weak var menuTitle: UILabel!
+    @IBOutlet weak var attentionLabel: AttentionLabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func set(with menu:MenuItem){
+        menuTitle.text = menu.title
+        menuImage.image = menu.image
+        
+        attentionLabel.isHidden = true
+        if !menu.attention.isEmpty {
+            attentionLabel.text = "\(menu.attention)"
+            attentionLabel.isHidden = false
+        }
     }
 
 }

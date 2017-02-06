@@ -16,7 +16,6 @@ class CustomNavigationViewController: UINavigationController {
         let nav = self.navigationBar
         
         nav.setBackgroundImage(UIImage(), for: .default)
-        nav.backgroundColor = UIColor.red
         
         nav.isTranslucent = false
         nav.shadowImage = UIImage()

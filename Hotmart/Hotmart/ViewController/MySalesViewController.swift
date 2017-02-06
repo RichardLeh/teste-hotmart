@@ -10,6 +10,8 @@ import UIKit
 
 class MySalesViewController: UIViewController {
 
+    var saleItens = [SaleItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,32 @@ class MySalesViewController: UIViewController {
         nav?.barTintColor = color
         
         self.title = "Minhas Vendas"
+        
+        getSalesItens()
     }
 
+    func getSalesItens(){
+        
+        let titles = ["Como decorar uma festa",
+                      ""]
+        
+        for index in 0...5 {
+            var attention = false
+            if index < 3 {
+                attention = true
+            }
+            
+            let item = SaleItem(id: "354\(index)",
+                                title: "Como decorar uma festa",
+                                date: Date().description,
+                                price: Int(arc4random_uniform(400000)),
+                                attention: attention)
+            
+            self.saleItens.append(item)
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,15 +55,14 @@ class MySalesViewController: UIViewController {
 extension MySalesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "saleCell")// as! MenuTableViewCell
-        //cell.menuTitle.text = menuItens[indexPath.row].title
-        //cell.menuImage.image = menuItens[indexPath.row].image
+        let cell = tableView.dequeueReusableCell(withIdentifier: "saleCell") as! SaleItemTableViewCell
+        cell.set(with: saleItens[indexPath.row])
         
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return saleItens.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
