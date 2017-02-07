@@ -36,6 +36,13 @@ extension UIColor {
 
 extension UIView {
     
+    func addBottomBorderWithColor(color: UIColor, size: CGFloat) {
+        let border = CALayer()
+        border.backgroundColor = color.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - size, width: self.frame.size.width, height: size)
+        self.layer.addSublayer(border)
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius

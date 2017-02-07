@@ -15,6 +15,8 @@
 		C52777ED1E47E08000952A7B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777EC1E47E08000952A7B /* MenuItem.swift */; };
 		C52777EF1E47E13100952A7B /* SaleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777EE1E47E13100952A7B /* SaleItem.swift */; };
 		C52777F11E47E58F00952A7B /* SaleItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777F01E47E58F00952A7B /* SaleItemTableViewCell.swift */; };
+		C52777F41E49595000952A7B /* SaleItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */; };
+		C52777F61E496A7600952A7B /* SaleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777F51E496A7500952A7B /* SaleTableViewController.swift */; };
 		C597B91C1E466246002A6BCB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91B1E466246002A6BCB /* MenuViewController.swift */; };
 		C597B91F1E466403002A6BCB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */; };
 		C597B9211E466968002A6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C597B9201E466968002A6BCB /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		C52777EC1E47E08000952A7B /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Model/MenuItem.swift; sourceTree = "<group>"; };
 		C52777EE1E47E13100952A7B /* SaleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleItem.swift; path = Model/SaleItem.swift; sourceTree = "<group>"; };
 		C52777F01E47E58F00952A7B /* SaleItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleItemTableViewCell.swift; path = View/SaleItemTableViewCell.swift; sourceTree = "<group>"; };
+		C52777F31E49595000952A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SaleItemTableViewCell.xib; sourceTree = "<group>"; };
+		C52777F51E496A7500952A7B /* SaleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleTableViewController.swift; path = ViewController/SaleTableViewController.swift; sourceTree = "<group>"; };
 		C597B91B1E466246002A6BCB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ViewController/MenuViewController.swift; sourceTree = "<group>"; };
 		C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = View/MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C597B9201E466968002A6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				C597B9281E477F9A002A6BCB /* DashboardViewController.swift */,
 				C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */,
 				C597B92C1E478727002A6BCB /* MySalesViewController.swift */,
+				C52777F51E496A7500952A7B /* SaleTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				C5BB3F2D1E4540FE00716160 /* Main.storyboard */,
 				C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */,
+				C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52777F41E49595000952A7B /* SaleItemTableViewCell.xib in Resources */,
 				C5BB3F341E4540FE00716160 /* LaunchScreen.storyboard in Resources */,
 				C597B9231E467322002A6BCB /* Menu.plist in Resources */,
 				C52777E61E47D3A100952A7B /* server.json in Resources */,
@@ -365,6 +372,7 @@
 				C52777EA1E47E04800952A7B /* User.swift in Sources */,
 				C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */,
 				C52777F11E47E58F00952A7B /* SaleItemTableViewCell.swift in Sources */,
+				C52777F61E496A7600952A7B /* SaleTableViewController.swift in Sources */,
 				C597B9311E478854002A6BCB /* Extensions.swift in Sources */,
 				C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */,
 				C52777EF1E47E13100952A7B /* SaleItem.swift in Sources */,
@@ -398,6 +406,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52777F31E49595000952A7B /* Base */,
+			);
+			name = SaleItemTableViewCell.xib;
+			sourceTree = "<group>";
+		};
 		C5BB3F2D1E4540FE00716160 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

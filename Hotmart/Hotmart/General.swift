@@ -12,6 +12,8 @@ enum Colors: String{
     case navDashboard = "#d04f2a"
     case navMessages = "#e7ad45"
     case navMySales = "#4982c5"
+    
+    case lightGrayBG = "#f4f4f4"
 }
 
 struct Segues {

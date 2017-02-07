@@ -8,9 +8,7 @@
 
 import UIKit
 
-class MySalesViewController: UIViewController {
-
-    var saleItens = [SaleItem]()
+class MySalesViewController: SaleTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,63 +18,5 @@ class MySalesViewController: UIViewController {
         nav?.barTintColor = color
         
         self.title = "Minhas Vendas"
-        
-        getSalesItens()
-    }
-
-    func getSalesItens(){
-        
-        let titles = ["Como decorar uma festa",
-                      "Desenvolvendo seus negócios de forma efeciênte",
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                      "Vivamus ornare porta tortor, ac condimentum eros imperdiet vel",
-                      "Quisque vel lacus sapien. In id mattis felis",
-                      "Meu produto, Meu produto, Meu produto, Meu produto, Meu produto"]
-        
-        for index in 0...5 {
-            var attention = false
-            if index < 3 {
-                attention = true
-            }
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            let dateString = dateFormatter.string(from: Date())
-            
-            let item = SaleItem(id: "354\(index)",
-                                title: titles[index],
-                                date: dateString,
-                                price: Int(arc4random_uniform(400000)),
-                                attention: attention)
-            
-            self.saleItens.append(item)
-        }
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-}
-
-extension MySalesViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "saleCell") as! SaleItemTableViewCell
-        cell.set(with: saleItens[indexPath.row])
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return saleItens.count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        /*if !menuItens[indexPath.row].link.isEmpty {
-            sideMenuController?.performSegue(withIdentifier: menuItens[indexPath.row].link, sender: nil)
-        }*/
     }
 }
