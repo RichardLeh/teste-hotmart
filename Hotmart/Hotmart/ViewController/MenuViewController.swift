@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MenuViewController: UIViewController {
 
@@ -19,8 +20,8 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let user = User(name: "Richard Leh", email: "richardleh@gmail.com", picture: #imageLiteral(resourceName: "user"))
+                
+        let user = DataBase().getCurrentUser()
         
         setUpUser(with: user)
         setUpMenu(withDict: getMenuPlist())
@@ -30,8 +31,15 @@ class MenuViewController: UIViewController {
         userNameLabel.text = user.name.uppercased()
         emailUserLabel.text = user.email.lowercased()
         
-        picImageView.image = user.picture
-        backgroundImageView.image = user.picture
+        
+        if let picUrl = URL(string: user.pictureUrl) {
+            
+            if let data = try? Data(contentsOf: picUrl){
+                picImageView.image = UIImage(data: data)
+                backgroundImageView.image = UIImage(data: data)
+            }
+        }
+        
         backgroundImageView.blurImage()
     }
     

@@ -17,8 +17,8 @@ class SaleItemTableViewCell: UITableViewCell {
         
     func set(with item:SaleItem){
         titleLabel.text = item.title
-        idDateLabel.text = item.id + " - " + item.date
-        priceLabel.text = "R$ \(item.price)"
-        attentionIcon.isHidden = !item.attention
+        idDateLabel.text = "\(item.id)" + " - " + item.date
+        priceLabel.text = item.price
+        attentionIcon.isHidden = !item.warning
     }
 }

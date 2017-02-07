@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SaleTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,32 +26,7 @@ class SaleTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func getSalesItens(){
-        
-        let titles = ["Como decorar uma festa",
-                      "Desenvolvendo seus negócios de forma efeciênte",
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                      "Vivamus ornare porta tortor, ac condimentum eros imperdiet vel",
-                      "Quisque vel lacus sapien. In id mattis felis",
-                      "Meu produto, Meu produto, Meu produto, Meu produto, Meu produto"]
-        
-        for index in 0...5 {
-            var attention = false
-            if index < 3 {
-                attention = true
-            }
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            let dateString = dateFormatter.string(from: Date())
-            
-            let item = SaleItem(id: "354\(index)",
-                title: titles[index],
-                date: dateString,
-                price: Int(arc4random_uniform(400000)),
-                attention: attention)
-            
-            self.saleItens.append(item)
-        }
+        saleItens = DataBase().getSalesItens()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

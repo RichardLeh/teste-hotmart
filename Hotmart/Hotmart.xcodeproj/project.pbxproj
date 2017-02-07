@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		53E646275EA09B756D4BDEBA /* Pods_Hotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */; };
+		794E88BF1E49F75400574191 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E88BE1E49F75400574191 /* Request.swift */; };
+		79E8E8CE1E4A507C00522A32 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8CD1E4A507C00522A32 /* DataBase.swift */; };
 		C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */; };
 		C52777E41E47CA6A00952A7B /* AttentionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E31E47CA6A00952A7B /* AttentionLabel.swift */; };
 		C52777E61E47D3A100952A7B /* server.json in Resources */ = {isa = PBXBuildFile; fileRef = C52777E51E47D3A100952A7B /* server.json */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.release.xcconfig"; sourceTree = "<group>"; };
+		794E88BE1E49F75400574191 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		79E8E8CD1E4A507C00522A32 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DD49D48A6BA761F5EA0B7E /* Pods-Hotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.debug.xcconfig"; sourceTree = "<group>"; };
 		C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
@@ -125,8 +129,8 @@
 		C597B91A1E4661B0002A6BCB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C597B91B1E466246002A6BCB /* MenuViewController.swift */,
 				C597B9261E477DAD002A6BCB /* RootViewController.swift */,
+				C597B91B1E466246002A6BCB /* MenuViewController.swift */,
 				C597B9281E477F9A002A6BCB /* DashboardViewController.swift */,
 				C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */,
 				C597B92C1E478727002A6BCB /* MySalesViewController.swift */,
@@ -155,7 +159,9 @@
 				C597B92E1E478815002A6BCB /* General.swift */,
 				C597B9301E478854002A6BCB /* Extensions.swift */,
 				C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */,
+				794E88BE1E49F75400574191 /* Request.swift */,
 				C52777E51E47D3A100952A7B /* server.json */,
+				79E8E8CD1E4A507C00522A32 /* DataBase.swift */,
 			);
 			name = "Supporting File";
 			sourceTree = "<group>";
@@ -372,9 +378,11 @@
 				C52777EA1E47E04800952A7B /* User.swift in Sources */,
 				C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */,
 				C52777F11E47E58F00952A7B /* SaleItemTableViewCell.swift in Sources */,
+				79E8E8CE1E4A507C00522A32 /* DataBase.swift in Sources */,
 				C52777F61E496A7600952A7B /* SaleTableViewController.swift in Sources */,
 				C597B9311E478854002A6BCB /* Extensions.swift in Sources */,
 				C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */,
+				794E88BF1E49F75400574191 /* Request.swift in Sources */,
 				C52777EF1E47E13100952A7B /* SaleItem.swift in Sources */,
 				C597B92D1E478727002A6BCB /* MySalesViewController.swift in Sources */,
 				C52777ED1E47E08000952A7B /* MenuItem.swift in Sources */,

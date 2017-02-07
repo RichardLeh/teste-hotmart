@@ -1,11 +1,46 @@
 {
     "user": {
+        "id": 99,
         "name":"ricardo ac",
-        "login":"ricardo@email.com.br"
-    }
-    "menu": [
+        "email":"ricardo@email.com.br",
+        "balance": "R$ 3000,00",
+        "pictureUrl": "https://img03.rl0.ru/4936c3efbed7b9b9f78279672457df91/c800x700/cdn-images-1.medium.com/max/800/1*7VAqRM3yZd-BloBpCasmCQ.png"
+    },
+    "sales": [
         {
-            "title":
-        }
+            "id": 123456,
+            "title": "TESTE1",
+            "date": "2017-01-23",
+            "price": "R$ 100,10",
+            "warning": false
+        },
+        {
+            "id": 123457,
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "date": "2017-01-30",
+            "price": "R$ 1000,15",
+            "warning": true
+        },
+        {
+            "id": 123458,
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "date": "2017-01-03",
+            "price": "R$ 220,80",
+            "warning": false
+        },
+        {
+            "id": 123459,
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "date": "2017-02-10",
+            "price": "R$ 100,60",
+            "warning": false
+      },
+      {
+          "id": 123460,
+          "title": "------------- TESTE -",
+          "date": "2017-02-10",
+          "price": "R$ 100,60",
+          "warning": false
+       }
     ]
 }

@@ -22,6 +22,6 @@ class DashboardViewController: SaleTableViewController {
         statusView.backgroundColor = color
         
         self.title = "Dashboard"
-        
+        self.saldoAtualLabel.text = DataBase().getCurrentUser().balance
     }
 }

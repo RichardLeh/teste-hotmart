@@ -1,12 +1,20 @@
 PODS:
+  - Realm (2.1.2):
+    - Realm/Headers (= 2.1.2)
+  - Realm/Headers (2.1.2)
+  - RealmSwift (2.1.2):
+    - Realm (= 2.1.2)
   - SideMenuController (0.2.1)
 
 DEPENDENCIES:
+  - RealmSwift
   - SideMenuController
 
 SPEC CHECKSUMS:
+  Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
+  RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
   SideMenuController: 4c543122289d74e1db9d1e24fd3264581fd6ac4e
 
-PODFILE CHECKSUM: 38d81e2dbc1ef3210682de442adb351c6d69e450
+PODFILE CHECKSUM: f2ef6d1e6a04a8d329ba6eeda47325d6ff92b80e
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.3
