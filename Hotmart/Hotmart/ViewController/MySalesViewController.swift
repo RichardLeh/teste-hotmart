@@ -14,9 +14,9 @@ class MySalesViewController: SaleTableViewController {
         super.viewDidLoad()
 
         let nav = self.navigationController?.navigationBar
-        let color = UIColor(defaultColor: .navMySales)
+        let color = UIColor(defaultColor: .blue)
         nav?.barTintColor = color
         
-        self.title = "Minhas Vendas"
+        self.title = Titles.mysales
     }
 }

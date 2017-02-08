@@ -15,7 +15,11 @@ class SaleItemTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var attentionIcon: UIImageView!
         
-    func set(with item:SaleItem){
+    func set(with item:SaleItem?){
+        guard let item = item else {
+            return
+        }
+        
         titleLabel.text = item.title
         idDateLabel.text = "\(item.id)" + " - " + item.date
         priceLabel.text = item.price

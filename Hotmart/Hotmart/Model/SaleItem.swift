@@ -9,6 +9,8 @@
 import Foundation
 import RealmSwift
 
+typealias ArraySaleItem = Results<SaleItem>
+
 struct SaleItemAtributtes {
     static let id = "id"
     static let title = "title"
@@ -46,5 +48,11 @@ class SaleItem: Object {
         if let warning = data[SaleItemAtributtes.warning] as? Bool{
             self.warning = warning
         }
+    }
+}
+
+extension SaleItem {
+    class func getSalesItens() -> ArraySaleItem? {
+        return DataBase.getRealm()?.objects(SaleItem.self)
     }
 }

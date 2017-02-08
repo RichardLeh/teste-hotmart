@@ -20,18 +20,16 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        let user = DataBase().getCurrentUser()
         
-        setUpUser(with: user)
+        setUpUser(with: User.getCurrentUser())
         setUpMenu(withDict: getMenuPlist())
     }
 
-    func setUpUser(with user:User){
-        userNameLabel.text = user.name.uppercased()
-        emailUserLabel.text = user.email.lowercased()
+    func setUpUser(with user:User?){
+        userNameLabel.text = user?.name.uppercased()
+        emailUserLabel.text = user?.email.lowercased()
         
-        if let picUrl = URL(string: user.pictureUrl) {
+        if let urlString = user?.pictureUrl, let picUrl = URL(string: urlString) {
             
             if let data = try? Data(contentsOf: picUrl){
                 picImageView.image = UIImage(data: data)

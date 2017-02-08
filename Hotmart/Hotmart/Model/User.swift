@@ -48,3 +48,9 @@ class User: Object{
         }
     }
 }
+
+extension User {
+    class func getCurrentUser() -> User? {
+        return DataBase.getRealm()?.objects(User.self).first
+    }
+}

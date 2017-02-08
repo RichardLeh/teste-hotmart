@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import RealmSwift
 
 class SaleTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    var saleItens = [SaleItem]()
+    var saleItens: ArraySaleItem?
     
     fileprivate let reuseIdentifier = "saleCell"
     
@@ -26,12 +25,12 @@ class SaleTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func getSalesItens(){
-        saleItens = DataBase().getSalesItens()
+        saleItens = SaleItem.getSalesItens()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as! SaleItemTableViewCell
-        cell.set(with: saleItens[indexPath.row])
+        cell.set(with: saleItens?[indexPath.row])
         
         cell.backgroundColor = UIColor.white
         if indexPath.row % 2 == 0{
@@ -42,6 +41,7 @@ class SaleTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let saleItens = saleItens else{ return 0 }
         return saleItens.count
     }
     

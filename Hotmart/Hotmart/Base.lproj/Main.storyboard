@@ -292,7 +292,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-Od-C0L" customClass="AttentionLabel" customModule="Hotmart" customModuleProvider="target">
-                                                <rect key="frame" x="324.5" y="16" width="36" height="18"/>
+                                                <rect key="frame" x="335" y="16" width="25.5" height="18"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.67843137249999996" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="fR5-vQ-H99"/>
@@ -316,7 +316,7 @@
                                             <constraint firstItem="WTT-Od-C0L" firstAttribute="centerY" secondItem="DDB-Yf-vfW" secondAttribute="centerY" id="hKE-e0-LCi"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-df-bRq">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-df-bRq" customClass="MessageScrollView" customModule="Hotmart" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="375" height="151"/>
                                     </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-12-DwA">

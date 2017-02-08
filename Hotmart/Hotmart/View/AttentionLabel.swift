@@ -16,7 +16,7 @@ import UIKit
         let insets = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
         
-        self.backgroundColor = UIColor(defaultColor: .navMessages)
+        self.backgroundColor = UIColor(defaultColor: .lightOrange)
     }
 
     override var intrinsicContentSize: CGSize {

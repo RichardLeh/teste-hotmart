@@ -22,22 +22,18 @@ struct DataBaseSettings {
 
 class DataBase {
     
-    private func setUpRealmConfig(){
-        var config = Realm.Configuration()
-        
-        config.fileURL = config.fileURL!.deletingLastPathComponent()
-            .appendingPathComponent(DataBaseSettings.name)
-        
-        Realm.Configuration.defaultConfiguration = config
+    class func getRealm() -> Realm? {
+        return try? Realm()
     }
     
-    func startSync(){
-        self.setUpRealmConfig()
+    class func startSync(){
+        guard let realm = getRealm() else {
+            print("there's an error accessing Realm!")
+            return
+        }
         
         if let data = Request().getLocalJsonData(name: DataBaseSettings.localJson) as? DictionaryType {
             print(data)
-            
-            let realm = try! Realm()
             
             if let userData = data[DataBaseSettings.jsonProperties.user] as? DictionaryType {
                 print(userData)
@@ -74,29 +70,5 @@ class DataBase {
                 }
             }
         }
-    }
-    
-    func getCurrentUser() -> User{
-        var user = User()//name: "Richard Leh", email: "richardleh@gmail.com", picture: #imageLiteral(resourceName: "user"))
-        
-        let realm = try? Realm()
-        if let realm = realm {
-            if let userdb = realm.objects(User.self).first {
-                user = userdb
-            }
-        }
-        
-        return user
-    }
-    
-    func getSalesItens() -> [SaleItem]{
-        var saleItens = [SaleItem]()
-        
-        let realm = try? Realm()
-        if let realm = realm {
-            saleItens = Array(realm.objects(SaleItem.self))
-        }
-        
-        return saleItens
     }
 }

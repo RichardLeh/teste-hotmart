@@ -9,6 +9,8 @@
 import Foundation
 import RealmSwift
 
+typealias ArrayMessage = Results<Message>
+
 struct MessageAtributtes {
     static let id = "id"
     static let sender = "sender"
@@ -41,5 +43,11 @@ class Message: Object {
         if let date = data[MessageAtributtes.date] as? String{
             self.date = date
         }
+    }
+}
+
+extension Message {
+    class func getMessages() -> ArrayMessage? {
+        return DataBase.getRealm()?.objects(Message.self)
     }
 }

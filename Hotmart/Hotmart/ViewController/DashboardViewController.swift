@@ -17,11 +17,11 @@ class DashboardViewController: SaleTableViewController {
         super.viewDidLoad()
 
         let nav = self.navigationController?.navigationBar
-        let color = UIColor(defaultColor: .navDashboard)
+        let color = UIColor(defaultColor: .darkOrange)
         nav?.barTintColor = color
         statusView.backgroundColor = color
         
-        self.title = "Dashboard"
-        self.saldoAtualLabel.text = DataBase().getCurrentUser().balance
+        self.title = Titles.dashboard
+        self.saldoAtualLabel.text = User.getCurrentUser()?.balance
     }
 }

@@ -14,9 +14,9 @@ class MessagesViewController: UIViewController {
         super.viewDidLoad()
 
         let nav = self.navigationController?.navigationBar
-        let color = UIColor(defaultColor: .navMessages)
+        let color = UIColor(defaultColor: .lightOrange)
         nav?.barTintColor = color
         
-        self.title = "Mensagens"
+        self.title = Titles.messages
     }
 }

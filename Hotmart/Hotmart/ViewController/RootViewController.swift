@@ -23,7 +23,7 @@ class RootViewController: SideMenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataBase().startSync()
+        DataBase.startSync()
         
         performSegue(withIdentifier: Segues.menuDashboard, sender: nil)
         performSegue(withIdentifier: Segues.sideMenu, sender: nil)

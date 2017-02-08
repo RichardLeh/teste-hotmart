@@ -10,10 +10,13 @@ import Foundation
 
 typealias DictionaryType = Dictionary<String, Any>
 
-enum Colors: String{
-    case navDashboard = "#d04f2a"
-    case navMessages = "#e7ad45"
-    case navMySales = "#4982c5"
+enum Colors: String {
+    case darkOrange = "#d04f2a" //navDashboard
+    case lightOrange = "#e7ad45" // navMessages
+    case blue = "#4982c5" // navMySales
+    case lightGreen = "#a3c74b"
+    case pink = "#ce4251"
+    
     case lightGrayBG = "#f4f4f4"
 }
 
@@ -22,4 +25,10 @@ struct Segues {
     static let menuDashboard = "segueMenuDashboard"
     static let menuMySales = "segueMenuMySales"
     static let menuMessages = "segueMenuMessages"
+}
+
+struct Titles {
+    static let dashboard = "Dashboard"
+    static let mysales   = "Minhas Vendas"
+    static let messages  = "Mensagens"
 }
