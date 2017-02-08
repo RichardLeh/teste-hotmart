@@ -12,6 +12,12 @@ import RealmSwift
 struct DataBaseSettings {
     static let name = "database.realm"
     static let localJson = "server"
+    
+    struct jsonProperties {
+        static let user = "user"
+        static let sales = "sales"
+        static let messages = "messages"
+    }
 }
 
 class DataBase {
@@ -33,7 +39,7 @@ class DataBase {
             
             let realm = try! Realm()
             
-            if let userData = data["user"] as? DictionaryType {
+            if let userData = data[DataBaseSettings.jsonProperties.user] as? DictionaryType {
                 print(userData)
                 
                 let user = User(withData: userData)
@@ -44,13 +50,25 @@ class DataBase {
                 
             }
             
-            if let salesData = data["sales"] as? [DictionaryType] {
+            if let salesData = data[DataBaseSettings.jsonProperties.sales] as? [DictionaryType] {
                 
                 for sale in salesData {
                     let saleItem = SaleItem(withData: sale)
                     
                     try? realm.write {
                         realm.add(saleItem, update:true)
+                    }
+                    
+                }
+            }
+            
+            if let messagesData = data[DataBaseSettings.jsonProperties.messages] as? [DictionaryType] {
+                
+                for message in messagesData {
+                    let messageItem = Message(withData: message)
+                    
+                    try? realm.write {
+                        realm.add(messageItem, update:true)
                     }
                     
                 }

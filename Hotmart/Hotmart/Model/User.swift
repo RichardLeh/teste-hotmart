@@ -9,6 +9,14 @@
 import Foundation
 import RealmSwift
 
+struct UserAtributtes {
+    static let id = "id"
+    static let name = "name"
+    static let email = "email"
+    static let balance = "balance"
+    static let pictureUrl = "pictureUrl"
+}
+
 class User: Object{
     dynamic var id = 0
     dynamic var name  = ""
@@ -23,19 +31,19 @@ class User: Object{
     convenience init(withData data: DictionaryType) {
         self.init()
         
-        if let id = data["id"] as? Int{
+        if let id = data[UserAtributtes.id] as? Int{
             self.id = id
         }
-        if let name = data["name"] as? String{
+        if let name = data[UserAtributtes.name] as? String{
             self.name = name
         }
-        if let email = data["email"] as? String{
+        if let email = data[UserAtributtes.email] as? String{
             self.email = email
         }
-        if let balance = data["balance"] as? String{
+        if let balance = data[UserAtributtes.balance] as? String{
             self.balance = balance
         }
-        if let pictureUrl = data["pictureUrl"] as? String{
+        if let pictureUrl = data[UserAtributtes.pictureUrl] as? String{
             self.pictureUrl = pictureUrl
         }
     }

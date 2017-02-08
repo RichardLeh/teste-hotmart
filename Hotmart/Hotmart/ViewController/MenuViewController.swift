@@ -31,7 +31,6 @@ class MenuViewController: UIViewController {
         userNameLabel.text = user.name.uppercased()
         emailUserLabel.text = user.email.lowercased()
         
-        
         if let picUrl = URL(string: user.pictureUrl) {
             
             if let data = try? Data(contentsOf: picUrl){
