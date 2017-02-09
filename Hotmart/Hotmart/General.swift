@@ -10,6 +10,8 @@ import Foundation
 
 typealias DictionaryType = Dictionary<String, Any>
 
+let currentLanguage:String? = NSLocale.current.languageCode
+
 enum Colors: String {
     case darkOrange = "#d04f2a" //navDashboard
     case lightOrange = "#e7ad45" // navMessages

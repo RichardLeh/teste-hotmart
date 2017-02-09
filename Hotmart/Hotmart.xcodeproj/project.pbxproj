@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		53E646275EA09B756D4BDEBA /* Pods_Hotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */; };
 		794E88BF1E49F75400574191 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E88BE1E49F75400574191 /* Request.swift */; };
+		79C0EBAF1E4CB616003826E2 /* Menu-pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */; };
+		79C0EBB11E4CB635003826E2 /* server-pt.json in Resources */ = {isa = PBXBuildFile; fileRef = 79C0EBB01E4CB635003826E2 /* server-pt.json */; };
 		79E8E8CE1E4A507C00522A32 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8CD1E4A507C00522A32 /* DataBase.swift */; };
 		79E8E8D01E4A548200522A32 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8CF1E4A548200522A32 /* Message.swift */; };
 		79E8E8D31E4B881B00522A32 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E8E8D11E4B881900522A32 /* MessageView.xib */; };
@@ -52,6 +54,9 @@
 /* Begin PBXFileReference section */
 		42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.release.xcconfig"; sourceTree = "<group>"; };
 		794E88BE1E49F75400574191 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		79C0EBAD1E4CACDC003826E2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Menu-pt.plist"; sourceTree = "<group>"; };
+		79C0EBB01E4CB635003826E2 /* server-pt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "server-pt.json"; sourceTree = "<group>"; };
 		79E8E8CD1E4A507C00522A32 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		79E8E8CF1E4A548200522A32 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Model/Message.swift; sourceTree = "<group>"; };
 		79E8E8D21E4B881A00522A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MessageView.xib; sourceTree = "<group>"; };
@@ -164,15 +169,17 @@
 			isa = PBXGroup;
 			children = (
 				C5BB3F291E4540FE00716160 /* AppDelegate.swift */,
+				C597B92E1E478815002A6BCB /* General.swift */,
+				794E88BE1E49F75400574191 /* Request.swift */,
+				79E8E8CD1E4A507C00522A32 /* DataBase.swift */,
+				C597B9301E478854002A6BCB /* Extensions.swift */,
+				C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */,
 				C597B9201E466968002A6BCB /* Assets.xcassets */,
 				C5BB3F351E4540FE00716160 /* Info.plist */,
 				C597B9221E467322002A6BCB /* Menu.plist */,
-				C597B92E1E478815002A6BCB /* General.swift */,
-				C597B9301E478854002A6BCB /* Extensions.swift */,
-				C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */,
-				794E88BE1E49F75400574191 /* Request.swift */,
+				79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */,
 				C52777E51E47D3A100952A7B /* server.json */,
-				79E8E8CD1E4A507C00522A32 /* DataBase.swift */,
+				79C0EBB01E4CB635003826E2 /* server-pt.json */,
 			);
 			name = "Supporting File";
 			sourceTree = "<group>";
@@ -320,6 +327,8 @@
 				C597B9231E467322002A6BCB /* Menu.plist in Resources */,
 				C52777E61E47D3A100952A7B /* server.json in Resources */,
 				79E8E8D31E4B881B00522A32 /* MessageView.xib in Resources */,
+				79C0EBAF1E4CB616003826E2 /* Menu-pt.plist in Resources */,
+				79C0EBB11E4CB635003826E2 /* server-pt.json in Resources */,
 				C597B9211E466968002A6BCB /* Assets.xcassets in Resources */,
 				C5BB3F2F1E4540FE00716160 /* Main.storyboard in Resources */,
 			);
@@ -450,6 +459,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C5BB3F2E1E4540FE00716160 /* Base */,
+				79C0EBAD1E4CACDC003826E2 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -469,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -519,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

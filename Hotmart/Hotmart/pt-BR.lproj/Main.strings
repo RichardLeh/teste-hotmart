@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Mensagens recentes"; ObjectID = "DDB-Yf-vfW"; */
+"DDB-Yf-vfW.text" = "Mensagens recentes";
+
+/* Class = "UILabel"; text = "Seu saldo atual é de:"; ObjectID = "WJO-5N-hiP"; */
+"WJO-5N-hiP.text" = "Seu saldo atual é de:";
+
+/* Class = "UILabel"; text = "+10"; ObjectID = "WTT-Od-C0L"; */
+"WTT-Od-C0L.text" = "+10";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "hSn-EK-Fgz"; */
+"hSn-EK-Fgz.text" = "10";
+
+/* Class = "UILabel"; text = "RICHARD LEH"; ObjectID = "ltu-4Z-9hT"; */
+"ltu-4Z-9hT.text" = "RICHARD LEH";
+
+/* Class = "UILabel"; text = "richardleh@gmail.com"; ObjectID = "lxn-w9-T7j"; */
+"lxn-w9-T7j.text" = "richardleh@gmail.com";
+
+/* Class = "UILabel"; text = "R$2.152,23"; ObjectID = "ncg-e4-e5G"; */
+"ncg-e4-e5G.text" = "R$2.152,23";
+
+/* Class = "UILabel"; text = "MenuItem"; ObjectID = "pOE-c9-RDf"; */
+"pOE-c9-RDf.text" = "MenuItem";

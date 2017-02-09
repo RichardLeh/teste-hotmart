@@ -22,7 +22,10 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         
         setUpUser(with: User.getCurrentUser())
-        setUpMenu(withDict: getMenuPlist())
+        
+        let menuName = (currentLanguage == "pt") ? RequestSettings.localMenuPt : RequestSettings.localMenuEn
+        
+        setUpMenu(withDict: Request.getMenuPlist(withName: menuName))
     }
 
     func setUpUser(with user:User?){
@@ -47,20 +50,6 @@ class MenuViewController: UIViewController {
             backgroundImageView.image = UIImage(data: data)
         }
         
-    }
-    
-    func getMenuPlist() -> [Dictionary<String, String>] {
-        var menuItensArrDict = [Dictionary<String, String>]()
-        if  let fileUrl = Bundle.main.url(forResource: "Menu", withExtension: "plist"),
-            let data = try? Data(contentsOf: fileUrl) {
-            if let menuItensArr = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [Dictionary<String, String>] { 
-                if let menuItensArr = menuItensArr{
-                    menuItensArrDict = menuItensArr
-                }
-            }
-        }
-        
-        return menuItensArrDict
     }
     
     func setUpMenu(withDict itens:[Dictionary<String, String>]){
