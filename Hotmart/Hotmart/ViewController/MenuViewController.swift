@@ -29,22 +29,31 @@ class MenuViewController: UIViewController {
         userNameLabel.text = user?.name.uppercased()
         emailUserLabel.text = user?.email.lowercased()
         
-        if let urlString = user?.pictureUrl, let picUrl = URL(string: urlString) {
-            
-            if let data = try? Data(contentsOf: picUrl){
-                picImageView.image = UIImage(data: data)
-                backgroundImageView.image = UIImage(data: data)
-            }
+        defer {
+            backgroundImageView.blurImage()
         }
         
-        backgroundImageView.blurImage()
+        let defaultImage = #imageLiteral(resourceName: "user")
+    
+        picImageView.image = defaultImage
+        backgroundImageView.image = defaultImage
+        
+        guard let urlString = user?.pictureUrl, let picUrl = URL(string: urlString) else {
+            return
+        }
+        
+        if let data = try? Data(contentsOf: picUrl){
+            picImageView.image = UIImage(data: data)
+            backgroundImageView.image = UIImage(data: data)
+        }
+        
     }
     
     func getMenuPlist() -> [Dictionary<String, String>] {
         var menuItensArrDict = [Dictionary<String, String>]()
         if  let fileUrl = Bundle.main.url(forResource: "Menu", withExtension: "plist"),
             let data = try? Data(contentsOf: fileUrl) {
-            if let menuItensArr = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [Dictionary<String, String>] { // [String: Any] which ever it is
+            if let menuItensArr = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [Dictionary<String, String>] { 
                 if let menuItensArr = menuItensArr{
                     menuItensArrDict = menuItensArr
                 }

@@ -29,7 +29,7 @@ class SaleTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.set(with: saleItens?[indexPath.row])
         
         cell.backgroundColor = UIColor.white
-        if indexPath.row % 2 == 0{
+        if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor(defaultColor: .lightGrayBG)
         }
         
