@@ -292,7 +292,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-Od-C0L" customClass="AttentionLabel" customModule="Hotmart" customModuleProvider="target">
-                                                <rect key="frame" x="335" y="16" width="25.5" height="18"/>
+                                                <rect key="frame" x="325" y="16" width="35.5" height="18"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.67843137249999996" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="fR5-vQ-H99"/>
@@ -370,6 +370,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nfn-NY-vJf"/>
                     <connections>
+                        <outlet property="mensagensNãoLidas" destination="WTT-Od-C0L" id="6ZW-Je-x0K"/>
                         <outlet property="saldoAtualLabel" destination="ncg-e4-e5G" id="hQz-wT-6Qu"/>
                         <outlet property="statusView" destination="oAy-MJ-jef" id="nkW-3V-ADW"/>
                         <outlet property="tableView" destination="RCZ-Cg-au2" id="qxl-D2-6lB"/>

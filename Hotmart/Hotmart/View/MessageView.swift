@@ -13,8 +13,11 @@ class MessageView: UIView {
     @IBOutlet weak var imgButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     
-    func set(with message: Message){
-        nameLabel.text = message.sender
+    class func instanceFromNib() -> MessageView {
+        return UINib(nibName: "MessageView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MessageView
     }
-
+    
+    func updateRadius(){
+        self.imgButton.cornerRadius = self.frame.width / 2
+    }
 }

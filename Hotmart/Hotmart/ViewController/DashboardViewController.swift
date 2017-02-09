@@ -8,10 +8,12 @@
 
 import UIKit
 
+
 class DashboardViewController: SaleTableViewController {
     
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var saldoAtualLabel: UILabel!
+    @IBOutlet weak var mensagensNãoLidas: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,8 @@ class DashboardViewController: SaleTableViewController {
         statusView.backgroundColor = color
         
         self.title = Titles.dashboard
-        self.saldoAtualLabel.text = User.getCurrentUser()?.balance
+        
+        saldoAtualLabel.text = User.getCurrentUser()?.balance
+        mensagensNãoLidas.text = "\(Message.getCountUnreadMessages())"
     }
 }

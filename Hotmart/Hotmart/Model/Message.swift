@@ -16,6 +16,7 @@ struct MessageAtributtes {
     static let sender = "sender"
     static let content = "content"
     static let date = "date"
+    static let unread = "unread"
 }
 
 class Message: Object {
@@ -23,6 +24,7 @@ class Message: Object {
     dynamic var sender = ""
     dynamic var content = ""
     dynamic var date = ""
+    dynamic var unread = true
     
     override static func primaryKey() -> String? {
         return "id"
@@ -43,11 +45,26 @@ class Message: Object {
         if let date = data[MessageAtributtes.date] as? String{
             self.date = date
         }
+        if let unread = data[MessageAtributtes.unread] as? Bool{
+            self.unread = unread
+        }
     }
 }
 
 extension Message {
     class func getMessages() -> ArrayMessage? {
         return DataBase.getRealm()?.objects(Message.self)
+    }
+    class func getCountUnreadMessages() -> Int{
+        if let data = getMessages() {
+            return data.filter("unread = true").count
+        }
+        return 0
+    }
+    class func getMessage(byId id:Int) -> Message? {
+        if let data = getMessages() {
+            return data.filter("id = %@", id).first
+        }
+        return nil
     }
 }

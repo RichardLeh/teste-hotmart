@@ -21,10 +21,6 @@ class SaleTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.register(UINib(nibName: "SaleItemTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 110
         
-        getSalesItens()
-    }
-    
-    func getSalesItens(){
         saleItens = SaleItem.getSalesItens()
     }
     
