@@ -13,9 +13,9 @@ typealias DictionaryType = Dictionary<String, Any>
 let currentLanguage:String? = NSLocale.current.languageCode
 
 enum Colors: String {
-    case darkOrange = "#d04f2a" //navDashboard
-    case lightOrange = "#e7ad45" // navMessages
-    case blue = "#4982c5" // navMySales
+    case darkOrange = "#d04f2a"
+    case lightOrange = "#e7ad45"
+    case blue = "#4982c5"
     case lightGreen = "#a3c74b"
     case pink = "#ce4251"
     
@@ -31,6 +31,6 @@ struct Segues {
 
 struct Titles {
     static let dashboard = "Dashboard"
-    static let mysales   = "Minhas Vendas"
-    static let messages  = "Mensagens"
+    static let mysales   = (currentLanguage == "pt") ? "Minhas Vendas" : "My Sales"
+    static let messages  = (currentLanguage == "pt") ? "Mensagens" : "Messages"
 }
