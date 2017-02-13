@@ -1,0 +1,142 @@
+{
+    "user":
+    {
+        "id": 99,
+        "name":"richard leh",
+        "email":"richardleh@gmail.com",
+        "balance": "R$2155,72",
+        "pictureUrl": "https://scontent-gru2-1.cdninstagram.com/t51.2885-15/e35/12558313_168702193496761_1834295413_n.jpg?ig_cache_key=MTE2Mzc4NjI0Nzc5MTQyMDgzOA%3D%3D.2"
+    },
+    "sales":
+    [
+    {
+        "id": 123456,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "date": "21/01/2017",
+        "price": "R$ 100,10",
+        "warning": true
+    },
+    {
+        "id": 123457,
+        "title": "Praesent ex risus, auctor ut rutrum nec",
+        "date": "30/01/2017",
+        "price": "R$ 1000,99",
+        "warning": true
+    },
+    {
+        "id": 123458,
+        "title": "Aliquam suscipit vel nunc ullamcorper tristique",
+        "date": "03/01/2017",
+        "price": "R$ 220,80",
+        "warning": true
+    },
+    {
+        "id": 123459,
+        "title": "Pellentesque pulvinar, nisi porttitor luctus fermentum, tellus nisl aliquam justo, et porta odio magna vel orci",
+        "date": "07/02/2017",
+        "price": "R$ 100,60",
+        "warning": false
+    },
+    {
+        "id": 123460,
+        "title": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+        "date": "07/02/2017",
+        "price": "R$ 781,99",
+        "warning": false
+    },
+    {
+        "id": 123461,
+        "title": "Vivamus tempor dolor vel vestibulum ultricies",
+        "date": "07/02/2017",
+        "price": "R$ 990,90",
+        "warning": false
+    },
+    {
+        "id": 123462,
+        "title": "Nam enim sapien, mollis et sodales sed, suscipit ut orci",
+        "date": "07/02/2017",
+        "price": "R$ 560,60",
+        "warning": false
+    },
+    {
+        "id": 123463,
+        "title": "Sed placerat dui malesuada",
+        "date": "08/22/2017",
+        "price": "R$ 4500,00",
+        "warning": false
+    }
+    ],
+    "messages":
+    [
+    {
+        "id": 1,
+        "sender": "Juarez Henrique",
+        "content": "Olá, teste 123",
+        "date": "2017-02-01 12:00",
+        "unread": true
+    },
+    {
+        "id": 2,
+        "sender": "Albert Richards",
+        "content": "Olá, teste 123",
+        "date": "2017-02-03 10:00"
+     },
+     {
+        "id": 3,
+        "sender": "Bruno Marques",
+        "content": "Olá, teste 123",
+        "date": "2017-02-04 12:00",
+        "unread": true
+     },
+     {
+        "id": 4,
+        "sender": "Renata Oliveira",
+        "content": "Olá, teste 123",
+        "date": "2017-02-07 6:00"
+     },
+     {
+        "id": 66,
+        "sender": "Michael Douglas",
+        "content": "Olá, teste 123",
+        "date": "2017-02-04 12:00",
+        "unread": true
+     },
+     {
+        "id": 13,
+        "sender": "Valéria Ciqueira",
+        "content": "Olá, teste 123",
+        "date": "2017-02-04 12:00",
+        "unread": true
+     },
+     {
+        "id": 123,
+        "sender": "Maria Carol",
+        "content": "Olá, teste 123",
+        "date": "2017-02-04 12:00",
+        "unread": true
+     },
+     {
+        "id": 44,
+        "sender": "Ricardo Oliveira",
+        "content": "Olá, teste 123",
+        "date": "2017-02-04 12:00",
+        "unread": true
+     },
+     {
+         "id": 46,
+         "sender": "Jéssica Mendes",
+         "content": "Olá, teste 123",
+         "date": "2017-02-04 12:00",
+         "unread": true
+     },
+     {
+         "id": 54,
+         "sender": "Ligia Barbosa",
+         "content": "Olá, teste 123",
+         "date": "2017-02-04 12:00",
+         "unread": true
+     }
+     
+     
+    ]
+}

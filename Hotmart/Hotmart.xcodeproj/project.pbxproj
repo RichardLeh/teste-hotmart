@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53E646275EA09B756D4BDEBA /* Pods_Hotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */; };
+		794E88BF1E49F75400574191 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E88BE1E49F75400574191 /* Request.swift */; };
+		79C0EBAF1E4CB616003826E2 /* Menu-pt.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */; };
+		79C0EBB11E4CB635003826E2 /* server-pt.json in Resources */ = {isa = PBXBuildFile; fileRef = 79C0EBB01E4CB635003826E2 /* server-pt.json */; };
+		79E8E8CE1E4A507C00522A32 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8CD1E4A507C00522A32 /* DataBase.swift */; };
+		79E8E8D01E4A548200522A32 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8CF1E4A548200522A32 /* Message.swift */; };
+		79E8E8D31E4B881B00522A32 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E8E8D11E4B881900522A32 /* MessageView.xib */; };
+		79E8E8D51E4B9D1E00522A32 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8D41E4B9D1E00522A32 /* MessageView.swift */; };
+		79E8E8D71E4BA9EC00522A32 /* MessageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8E8D61E4BA9EC00522A32 /* MessageScrollView.swift */; };
+		C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */; };
+		C52777E41E47CA6A00952A7B /* AttentionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E31E47CA6A00952A7B /* AttentionLabel.swift */; };
+		C52777E61E47D3A100952A7B /* server.json in Resources */ = {isa = PBXBuildFile; fileRef = C52777E51E47D3A100952A7B /* server.json */; };
+		C52777EA1E47E04800952A7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777E91E47E04800952A7B /* User.swift */; };
+		C52777ED1E47E08000952A7B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777EC1E47E08000952A7B /* MenuItem.swift */; };
+		C52777EF1E47E13100952A7B /* SaleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777EE1E47E13100952A7B /* SaleItem.swift */; };
+		C52777F11E47E58F00952A7B /* SaleItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777F01E47E58F00952A7B /* SaleItemTableViewCell.swift */; };
+		C52777F41E49595000952A7B /* SaleItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */; };
+		C52777F61E496A7600952A7B /* SaleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52777F51E496A7500952A7B /* SaleTableViewController.swift */; };
+		C597B91C1E466246002A6BCB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91B1E466246002A6BCB /* MenuViewController.swift */; };
+		C597B91F1E466403002A6BCB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */; };
+		C597B9211E466968002A6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C597B9201E466968002A6BCB /* Assets.xcassets */; };
+		C597B9231E467322002A6BCB /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C597B9221E467322002A6BCB /* Menu.plist */; };
+		C597B9271E477DAD002A6BCB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9261E477DAD002A6BCB /* RootViewController.swift */; };
+		C597B9291E477F9A002A6BCB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9281E477F9A002A6BCB /* DashboardViewController.swift */; };
+		C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */; };
+		C597B92D1E478727002A6BCB /* MySalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92C1E478727002A6BCB /* MySalesViewController.swift */; };
+		C597B92F1E478815002A6BCB /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B92E1E478815002A6BCB /* General.swift */; };
+		C597B9311E478854002A6BCB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597B9301E478854002A6BCB /* Extensions.swift */; };
+		C5BB3F2A1E4540FE00716160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB3F291E4540FE00716160 /* AppDelegate.swift */; };
+		C5BB3F2F1E4540FE00716160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BB3F2D1E4540FE00716160 /* Main.storyboard */; };
+		C5BB3F341E4540FE00716160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */; };
+		C5BB3F3F1E4540FE00716160 /* HotmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB3F3E1E4540FE00716160 /* HotmartTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5BB3F3B1E4540FE00716160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5BB3F1E1E4540FE00716160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5BB3F251E4540FE00716160;
+			remoteInfo = Hotmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.release.xcconfig"; sourceTree = "<group>"; };
+		794E88BE1E49F75400574191 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		79C0EBAD1E4CACDC003826E2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Menu-pt.plist"; sourceTree = "<group>"; };
+		79C0EBB01E4CB635003826E2 /* server-pt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "server-pt.json"; sourceTree = "<group>"; };
+		79E8E8CD1E4A507C00522A32 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		79E8E8CF1E4A548200522A32 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Model/Message.swift; sourceTree = "<group>"; };
+		79E8E8D21E4B881A00522A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MessageView.xib; sourceTree = "<group>"; };
+		79E8E8D41E4B9D1E00522A32 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = View/MessageView.swift; sourceTree = "<group>"; };
+		79E8E8D61E4BA9EC00522A32 /* MessageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageScrollView.swift; path = View/MessageScrollView.swift; sourceTree = "<group>"; };
+		974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DD49D48A6BA761F5EA0B7E /* Pods-Hotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotmart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart.debug.xcconfig"; sourceTree = "<group>"; };
+		C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		C52777E31E47CA6A00952A7B /* AttentionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttentionLabel.swift; path = View/AttentionLabel.swift; sourceTree = "<group>"; };
+		C52777E51E47D3A100952A7B /* server.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server.json; sourceTree = SOURCE_ROOT; };
+		C52777E91E47E04800952A7B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		C52777EC1E47E08000952A7B /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Model/MenuItem.swift; sourceTree = "<group>"; };
+		C52777EE1E47E13100952A7B /* SaleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleItem.swift; path = Model/SaleItem.swift; sourceTree = "<group>"; };
+		C52777F01E47E58F00952A7B /* SaleItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleItemTableViewCell.swift; path = View/SaleItemTableViewCell.swift; sourceTree = "<group>"; };
+		C52777F31E49595000952A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SaleItemTableViewCell.xib; sourceTree = "<group>"; };
+		C52777F51E496A7500952A7B /* SaleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaleTableViewController.swift; path = ViewController/SaleTableViewController.swift; sourceTree = "<group>"; };
+		C597B91B1E466246002A6BCB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ViewController/MenuViewController.swift; sourceTree = "<group>"; };
+		C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = View/MenuTableViewCell.swift; sourceTree = "<group>"; };
+		C597B9201E466968002A6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C597B9221E467322002A6BCB /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		C597B9261E477DAD002A6BCB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ViewController/RootViewController.swift; sourceTree = "<group>"; };
+		C597B9281E477F9A002A6BCB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ViewController/DashboardViewController.swift; sourceTree = "<group>"; };
+		C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = ViewController/MessagesViewController.swift; sourceTree = "<group>"; };
+		C597B92C1E478727002A6BCB /* MySalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySalesViewController.swift; path = ViewController/MySalesViewController.swift; sourceTree = "<group>"; };
+		C597B92E1E478815002A6BCB /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		C597B9301E478854002A6BCB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C5BB3F261E4540FE00716160 /* Hotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BB3F291E4540FE00716160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5BB3F2E1E4540FE00716160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5BB3F331E4540FE00716160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5BB3F351E4540FE00716160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5BB3F3A1E4540FE00716160 /* HotmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BB3F3E1E4540FE00716160 /* HotmartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotmartTests.swift; sourceTree = "<group>"; };
+		C5BB3F401E4540FE00716160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5BB3F231E4540FE00716160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E646275EA09B756D4BDEBA /* Pods_Hotmart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BB3F371E4540FE00716160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00553931486221948544920E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974C79B034BA0FB9D4EAACAC /* Pods_Hotmart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		549ACD17ED4A56FDED9BD5C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98DD49D48A6BA761F5EA0B7E /* Pods-Hotmart.debug.xcconfig */,
+				42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C52777EB1E47E05500952A7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C52777E91E47E04800952A7B /* User.swift */,
+				C52777EC1E47E08000952A7B /* MenuItem.swift */,
+				C52777EE1E47E13100952A7B /* SaleItem.swift */,
+				79E8E8CF1E4A548200522A32 /* Message.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C597B91A1E4661B0002A6BCB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C597B9261E477DAD002A6BCB /* RootViewController.swift */,
+				C597B91B1E466246002A6BCB /* MenuViewController.swift */,
+				C597B9281E477F9A002A6BCB /* DashboardViewController.swift */,
+				C597B92A1E4786C2002A6BCB /* MessagesViewController.swift */,
+				C597B92C1E478727002A6BCB /* MySalesViewController.swift */,
+				C52777F51E496A7500952A7B /* SaleTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C597B91D1E4663DD002A6BCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C597B91E1E466403002A6BCB /* MenuTableViewCell.swift */,
+				C52777E31E47CA6A00952A7B /* AttentionLabel.swift */,
+				C52777F01E47E58F00952A7B /* SaleItemTableViewCell.swift */,
+				79E8E8D41E4B9D1E00522A32 /* MessageView.swift */,
+				79E8E8D61E4BA9EC00522A32 /* MessageScrollView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C597B9241E477BA0002A6BCB /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F291E4540FE00716160 /* AppDelegate.swift */,
+				C597B92E1E478815002A6BCB /* General.swift */,
+				794E88BE1E49F75400574191 /* Request.swift */,
+				79E8E8CD1E4A507C00522A32 /* DataBase.swift */,
+				C597B9301E478854002A6BCB /* Extensions.swift */,
+				C52777E11E47ADEC00952A7B /* CustomNavigationViewController.swift */,
+				C597B9201E466968002A6BCB /* Assets.xcassets */,
+				C5BB3F351E4540FE00716160 /* Info.plist */,
+				C597B9221E467322002A6BCB /* Menu.plist */,
+				79C0EBAE1E4CB615003826E2 /* Menu-pt.plist */,
+				C52777E51E47D3A100952A7B /* server.json */,
+				79C0EBB01E4CB635003826E2 /* server-pt.json */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		C597B9251E477BB5002A6BCB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F2D1E4540FE00716160 /* Main.storyboard */,
+				C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */,
+				C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */,
+				79E8E8D11E4B881900522A32 /* MessageView.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C5BB3F1D1E4540FE00716160 = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F281E4540FE00716160 /* Hotmart */,
+				C5BB3F3D1E4540FE00716160 /* HotmartTests */,
+				C5BB3F271E4540FE00716160 /* Products */,
+				549ACD17ED4A56FDED9BD5C3 /* Pods */,
+				00553931486221948544920E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5BB3F271E4540FE00716160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F261E4540FE00716160 /* Hotmart.app */,
+				C5BB3F3A1E4540FE00716160 /* HotmartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5BB3F281E4540FE00716160 /* Hotmart */ = {
+			isa = PBXGroup;
+			children = (
+				C52777EB1E47E05500952A7B /* Model */,
+				C597B9251E477BB5002A6BCB /* UI */,
+				C597B91D1E4663DD002A6BCB /* View */,
+				C597B91A1E4661B0002A6BCB /* ViewController */,
+				C597B9241E477BA0002A6BCB /* Supporting File */,
+			);
+			path = Hotmart;
+			sourceTree = "<group>";
+		};
+		C5BB3F3D1E4540FE00716160 /* HotmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5BB3F3E1E4540FE00716160 /* HotmartTests.swift */,
+				C5BB3F401E4540FE00716160 /* Info.plist */,
+			);
+			path = HotmartTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5BB3F251E4540FE00716160 /* Hotmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5BB3F431E4540FE00716160 /* Build configuration list for PBXNativeTarget "Hotmart" */;
+			buildPhases = (
+				8FF939FE3C793A7A4B83A43C /* [CP] Check Pods Manifest.lock */,
+				C5BB3F221E4540FE00716160 /* Sources */,
+				C5BB3F231E4540FE00716160 /* Frameworks */,
+				C5BB3F241E4540FE00716160 /* Resources */,
+				F4A729A5D0A908AD1B76302D /* [CP] Embed Pods Frameworks */,
+				313DC7A516DBD5DD59EF3485 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hotmart;
+			productName = Hotmart;
+			productReference = C5BB3F261E4540FE00716160 /* Hotmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5BB3F391E4540FE00716160 /* HotmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5BB3F461E4540FE00716160 /* Build configuration list for PBXNativeTarget "HotmartTests" */;
+			buildPhases = (
+				C5BB3F361E4540FE00716160 /* Sources */,
+				C5BB3F371E4540FE00716160 /* Frameworks */,
+				C5BB3F381E4540FE00716160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5BB3F3C1E4540FE00716160 /* PBXTargetDependency */,
+			);
+			name = HotmartTests;
+			productName = HotmartTests;
+			productReference = C5BB3F3A1E4540FE00716160 /* HotmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5BB3F1E1E4540FE00716160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Richard Leh";
+				TargetAttributes = {
+					C5BB3F251E4540FE00716160 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C5BB3F391E4540FE00716160 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5BB3F251E4540FE00716160;
+					};
+				};
+			};
+			buildConfigurationList = C5BB3F211E4540FE00716160 /* Build configuration list for PBXProject "Hotmart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5BB3F1D1E4540FE00716160;
+			productRefGroup = C5BB3F271E4540FE00716160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5BB3F251E4540FE00716160 /* Hotmart */,
+				C5BB3F391E4540FE00716160 /* HotmartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5BB3F241E4540FE00716160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52777F41E49595000952A7B /* SaleItemTableViewCell.xib in Resources */,
+				C5BB3F341E4540FE00716160 /* LaunchScreen.storyboard in Resources */,
+				C597B9231E467322002A6BCB /* Menu.plist in Resources */,
+				C52777E61E47D3A100952A7B /* server.json in Resources */,
+				79E8E8D31E4B881B00522A32 /* MessageView.xib in Resources */,
+				79C0EBAF1E4CB616003826E2 /* Menu-pt.plist in Resources */,
+				79C0EBB11E4CB635003826E2 /* server-pt.json in Resources */,
+				C597B9211E466968002A6BCB /* Assets.xcassets in Resources */,
+				C5BB3F2F1E4540FE00716160 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BB3F381E4540FE00716160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		313DC7A516DBD5DD59EF3485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FF939FE3C793A7A4B83A43C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A729A5D0A908AD1B76302D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hotmart/Pods-Hotmart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5BB3F221E4540FE00716160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C597B9271E477DAD002A6BCB /* RootViewController.swift in Sources */,
+				C52777EA1E47E04800952A7B /* User.swift in Sources */,
+				C52777E21E47ADEC00952A7B /* CustomNavigationViewController.swift in Sources */,
+				C52777F11E47E58F00952A7B /* SaleItemTableViewCell.swift in Sources */,
+				79E8E8D51E4B9D1E00522A32 /* MessageView.swift in Sources */,
+				79E8E8CE1E4A507C00522A32 /* DataBase.swift in Sources */,
+				C52777F61E496A7600952A7B /* SaleTableViewController.swift in Sources */,
+				C597B9311E478854002A6BCB /* Extensions.swift in Sources */,
+				79E8E8D71E4BA9EC00522A32 /* MessageScrollView.swift in Sources */,
+				79E8E8D01E4A548200522A32 /* Message.swift in Sources */,
+				C597B92B1E4786C2002A6BCB /* MessagesViewController.swift in Sources */,
+				794E88BF1E49F75400574191 /* Request.swift in Sources */,
+				C52777EF1E47E13100952A7B /* SaleItem.swift in Sources */,
+				C597B92D1E478727002A6BCB /* MySalesViewController.swift in Sources */,
+				C52777ED1E47E08000952A7B /* MenuItem.swift in Sources */,
+				C597B91C1E466246002A6BCB /* MenuViewController.swift in Sources */,
+				C52777E41E47CA6A00952A7B /* AttentionLabel.swift in Sources */,
+				C597B9291E477F9A002A6BCB /* DashboardViewController.swift in Sources */,
+				C597B91F1E466403002A6BCB /* MenuTableViewCell.swift in Sources */,
+				C597B92F1E478815002A6BCB /* General.swift in Sources */,
+				C5BB3F2A1E4540FE00716160 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BB3F361E4540FE00716160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5BB3F3F1E4540FE00716160 /* HotmartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5BB3F3C1E4540FE00716160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5BB3F251E4540FE00716160 /* Hotmart */;
+			targetProxy = C5BB3F3B1E4540FE00716160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E8E8D11E4B881900522A32 /* MessageView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E8E8D21E4B881A00522A32 /* Base */,
+			);
+			name = MessageView.xib;
+			sourceTree = "<group>";
+		};
+		C52777F21E49595000952A7B /* SaleItemTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52777F31E49595000952A7B /* Base */,
+			);
+			name = SaleItemTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		C5BB3F2D1E4540FE00716160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5BB3F2E1E4540FE00716160 /* Base */,
+				79C0EBAD1E4CACDC003826E2 /* pt-BR */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5BB3F321E4540FE00716160 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5BB3F331E4540FE00716160 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5BB3F411E4540FE00716160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5BB3F421E4540FE00716160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5BB3F441E4540FE00716160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98DD49D48A6BA761F5EA0B7E /* Pods-Hotmart.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hotmart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richardleh.Hotmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C5BB3F451E4540FE00716160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42447C7A6E31B6E755BD0FB4 /* Pods-Hotmart.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hotmart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richardleh.Hotmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C5BB3F471E4540FE00716160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HotmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richardleh.HotmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotmart.app/Hotmart";
+			};
+			name = Debug;
+		};
+		C5BB3F481E4540FE00716160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HotmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richardleh.HotmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotmart.app/Hotmart";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5BB3F211E4540FE00716160 /* Build configuration list for PBXProject "Hotmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BB3F411E4540FE00716160 /* Debug */,
+				C5BB3F421E4540FE00716160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5BB3F431E4540FE00716160 /* Build configuration list for PBXNativeTarget "Hotmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BB3F441E4540FE00716160 /* Debug */,
+				C5BB3F451E4540FE00716160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5BB3F461E4540FE00716160 /* Build configuration list for PBXNativeTarget "HotmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BB3F471E4540FE00716160 /* Debug */,
+				C5BB3F481E4540FE00716160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5BB3F1E1E4540FE00716160 /* Project object */;
+}

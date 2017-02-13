@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Dashboard</string>
+		<key>image</key>
+		<string>ico_dashboard</string>
+		<key>link</key>
+		<string>segueMenuDashboard</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>My Sales</string>
+		<key>image</key>
+		<string>ico_minhas_vendas</string>
+		<key>link</key>
+		<string>segueMenuMySales</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>My Products</string>
+		<key>image</key>
+		<string>ico_meus_produtos</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Affiliates</string>
+		<key>image</key>
+		<string>ico_afiliados</string>
+		<key>attention</key>
+		<string>121</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Messages</string>
+		<key>image</key>
+		<string>ico_mensagem</string>
+		<key>link</key>
+		<string>segueMenuMessages</string>
+		<key>attention</key>
+		<string>+50</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Notifications</string>
+		<key>image</key>
+		<string>ico_notificacoes</string>
+		<key>attention</key>
+		<string>15</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>My account</string>
+		<key>image</key>
+		<string>ico_minha_conta</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>About</string>
+		<key>image</key>
+		<string>ico_sobre_o_app</string>
+	</dict>
+</array>
+</plist>
